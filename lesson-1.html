@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الدرس 1: التعارف بالألمانية للمبتدئين (Ich heiße) - A1</title>
+<meta name="description" content="تعلم تعرّف بنفسك بالألمانية: الاسم والبلد والسكن، بشرح مصري بسيط وتمرين تفاعلي.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><a href="index.html">ألماني <span>بالمصري</span></a></header>
+<main class="wrap">
+  <h1>الدرس 1: التعارف</h1>
+  <p class="lead">في الدرس ده هتعرف تقول اسمك وإنت منين وساكن فين، وتسأل حد نفس الأسئلة.</p>
+
+  <h2>الجمل الأساسية</h2>
+  <div class="phrase"><p class="de">Hallo! Ich heiße Ahmed.</p><p class="ar">أهلاً! اسمي أحمد.</p></div>
+  <div class="phrase"><p class="de">Ich komme aus Ägypten.</p><p class="ar">أنا جاي من مصر.</p></div>
+  <div class="phrase"><p class="de">Ich wohne in Kairo.</p><p class="ar">أنا ساكن في القاهرة.</p></div>
+  <div class="phrase"><p class="de">Ich bin Student.</p><p class="ar">أنا طالب.</p></div>
+
+  <h2>وتسأل إزاي؟</h2>
+  <div class="phrase"><p class="de">Wie heißt du?</p><p class="ar">اسمك إيه؟</p></div>
+  <div class="phrase"><p class="de">Woher kommst du?</p><p class="ar">إنت منين؟ (بالظبط: إنت جاي من فين؟)</p></div>
+  <div class="phrase"><p class="de">Wo wohnst du?</p><p class="ar">ساكن فين؟</p></div>
+  <div class="phrase"><p class="de">Wie geht's?</p><p class="ar">عامل إيه؟</p></div>
+
+  <h2>فكرة مهمة: الفعل دايماً في المركز التاني</h2>
+  <p>في الجملة الألمانية العادية، الفعل بيقعد في المكان التاني بعد الكلمة الأولى. زي ما تقول في المصري "أنا اسمي أحمد"، بس في الألماني الفعل هو اللي بيتغير شكله حسب مين بيتكلم:</p>
+  <table>
+    <tr><th>مين؟</th><th>الفعل (wohnen = يسكن)</th></tr>
+    <tr><td>أنا</td><td class="de">ich wohne</td></tr>
+    <tr><td>إنت</td><td class="de">du wohnst</td></tr>
+    <tr><td>هو / هي</td><td class="de">er / sie wohnt</td></tr>
+  </table>
+  <p>لاحظ إن آخر الفعل بيتغير: <span class="de">-e</span> مع أنا، <span class="de">-st</span> مع إنت، <span class="de">-t</span> مع هو وهي. ده هيتكرر معاك في كل الأفعال تقريباً.</p>
+
+  <div class="tip"><b>معلومة من الحياة:</b> <span class="de">du</span> بنقولها للأصحاب والأطفال والزمايل الصغيرين. مع الغريب أو المدير أو الدكتور بنقول <span class="de">Sie</span> (بحرف S كبير) وبيبقى الفعل معاها: <span class="de">Wie heißen Sie?</span></div>
+
+  <h2>جرّب نفسك</h2>
+  <div class="quiz" id="quiz" aria-live="polite"></div>
+</main>
+<footer>© ألماني بالمصري</footer>
+
+<script>
+(function(){
+  var Q=[
+    {q:"إزاي تقول \"اسمي سارة\"؟",o:["Ich heiße Sara.","Ich wohne Sara.","Ich komme Sara."],a:0,w:"heißen معناه \"اسمه\". wohnen للسكن وkommen للمجيء."},
+    {q:"كمّل: Ich ___ aus Ägypten.",o:["komme","kommst","kommt"],a:0,w:"مع ich الفعل بينتهي بـ -e."},
+    {q:"كمّل: Du ___ in Kairo.",o:["wohne","wohnst","wohnt"],a:1,w:"مع du الفعل بينتهي بـ -st."},
+    {q:"إزاي تسأل صاحبك \"إنت منين؟\"",o:["Wo wohnst du?","Woher kommst du?","Wie heißt du?"],a:1,w:"Woher = من فين، فـ Woher kommst du؟ يعني إنت جاي من فين."},
+    {q:"تقول إيه للدكتور بدل Wie heißt du؟",o:["Wie heißt Sie?","Wie heißen Sie?","Wie heißt Sie du?"],a:1,w:"مع الاحترام بنستخدم Sie والفعل بياخد -en: Wie heißen Sie?"},
+    {q:"فين مكان الفعل في الجملة: Ich wohne in Kairo؟",o:["الأول","التاني","الأخير"],a:1,w:"الفعل wohne جه في المركز التاني بعد ich."}
+  ];
+  var i=0,score=0,box=document.getElementById("quiz");
+  function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+  function show(){
+    if(i>=Q.length){
+      box.innerHTML='<p class="score">نتيجتك: '+score+' من '+Q.length+'</p><p>'+(score===Q.length?"ممتاز! أنت جاهز للدرس الجاي.":"كويس! راجع الشرح وجرب تاني.")+'</p><button class="btn" id="again">ابدأ من الأول</button> <a class="btn" href="index.html">كل الدروس</a>';
+      document.getElementById("again").onclick=function(){i=0;score=0;show()};
+      return;
+    }
+    var c=Q[i],h='<div class="count">سؤال '+(i+1)+' من '+Q.length+'</div><p class="q">'+esc(c.q)+'</p>';
+    c.o.forEach(function(t,k){
+      var de=/^[A-Za-z]/.test(t)?" de":"";
+      h+='<button class="opt'+de+'" data-k="'+k+'">'+esc(t)+'</button>';
+    });
+    h+='<div id="fb"></div>';
+    box.innerHTML=h;
+    box.querySelectorAll(".opt").forEach(function(b){b.onclick=function(){pick(+b.dataset.k)}});
+  }
+  function pick(k){
+    var c=Q[i],bs=box.querySelectorAll(".opt");
+    bs.forEach(function(b,n){b.disabled=true;if(n===c.a)b.classList.add("right");else if(n===k)b.classList.add("wrong")});
+    if(k===c.a)score++;
+    document.getElementById("fb").innerHTML='<p class="why">'+(k===c.a?"صح! ":"غلط. ")+esc(c.w)+'</p><button class="btn" id="next">'+(i===Q.length-1?"شوف النتيجة":"السؤال الجاي")+'</button>';
+    var n=document.getElementById("next");n.focus();
+    n.onclick=function(){i++;show()};
+  }
+  show();
+})();
+</script>
+</body>
+</html>
