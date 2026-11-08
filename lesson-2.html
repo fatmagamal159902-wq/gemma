@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الدرس 2: الأرقام بالألمانية من 0 إلى 100 - A1</title>
+<meta name="description" content="تعلم الأرقام بالألمانية من صفر لمية، وإزاي تقول سنك وسعر الحاجة، بشرح مصري وتمرين تفاعلي.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><a href="index.html">ألماني <span>بالمصري</span></a></header>
+<main class="wrap">
+  <h1>الدرس 2: الأرقام</h1>
+  <p class="lead">هتتعلم العد، وتقول سنك ورقم تليفونك وتفهم الأسعار.</p>
+
+  <h2>من 0 لـ 12</h2>
+  <table>
+    <tr><td class="de">0 null</td><td class="de">1 eins</td><td class="de">2 zwei</td></tr>
+    <tr><td class="de">3 drei</td><td class="de">4 vier</td><td class="de">5 fünf</td></tr>
+    <tr><td class="de">6 sechs</td><td class="de">7 sieben</td><td class="de">8 acht</td></tr>
+    <tr><td class="de">9 neun</td><td class="de">10 zehn</td><td class="de">11 elf</td></tr>
+    <tr><td class="de">12 zwölf</td><td></td><td></td></tr>
+  </table>
+
+  <h2>من 13 لـ 20</h2>
+  <p>من 13 لـ 19 بنضيف <span class="de">-zehn</span> للرقم: <span class="de">drei + zehn = dreizehn</span>. بس خد بالك من اتنين بيتغيروا شوية:</p>
+  <table>
+    <tr><td class="de">16 sechzehn</td><td class="de">17 siebzehn</td><td class="de">20 zwanzig</td></tr>
+  </table>
+  <p>اللي بيتحذف: الـ s من sechs، والـ en من sieben.</p>
+
+  <h2>العشرات</h2>
+  <table>
+    <tr><td class="de">30 dreißig</td><td class="de">40 vierzig</td><td class="de">50 fünfzig</td></tr>
+    <tr><td class="de">60 sechzig</td><td class="de">70 siebzig</td><td class="de">80 achtzig</td></tr>
+    <tr><td class="de">90 neunzig</td><td class="de">100 hundert</td><td></td></tr>
+  </table>
+
+  <h2>إزاي تركّب رقم زي 25؟</h2>
+  <p>هنا الألماني شبه العربي. بتقول الآحاد الأول وبعدين العشرات، زي ما تقول "خمسة وعشرين":</p>
+  <div class="phrase"><p class="de">25 = fünfundzwanzig</p><p class="ar">fünf (5) + und (و) + zwanzig (20)</p></div>
+  <div class="phrase"><p class="de">21 = einundzwanzig</p><p class="ar">واحد وعشرين. لاحظ إن eins بتبقى ein هنا.</p></div>
+
+  <h2>جمل هتستخدمها</h2>
+  <div class="phrase"><p class="de">Wie alt bist du?</p><p class="ar">سنك كام؟</p></div>
+  <div class="phrase"><p class="de">Ich bin 25 Jahre alt.</p><p class="ar">عندي 25 سنة.</p></div>
+  <div class="phrase"><p class="de">Das kostet 5 Euro.</p><p class="ar">ده بخمسة يورو.</p></div>
+
+  <div class="tip"><b>معلومة:</b> بنقول <span class="de">Ich bin 25 Jahre alt</span> يعني "أنا 25 سنة"، مش "عندي". بتستخدم الفعل <span class="de">bin</span> مش <span class="de">habe</span>.</div>
+
+  <h2>جرّب نفسك</h2>
+  <div class="quiz" id="quiz" aria-live="polite"></div>
+</main>
+<footer>© ألماني بالمصري</footer>
+<script>
+window.NEXT="lesson-3.html";
+window.QUIZ=[
+  {q:"إيه معنى sieben؟",o:["6","7","8"],a:1,w:"sieben = 7. وsechs = 6 وacht = 8."},
+  {q:"إزاي تقول 15؟",o:["fünfzig","fünfzehn","fünfundzwanzig"],a:1,w:"fünfzehn = 15. وfünfzig = 50."},
+  {q:"إزاي تقول 21؟",o:["zwanzigeins","einundzwanzig","zwanzigundeins"],a:1,w:"الآحاد الأول: ein + und + zwanzig، زي العربي \"واحد وعشرين\"."},
+  {q:"إيه معنى dreißig؟",o:["13","30","3"],a:1,w:"dreizehn = 13 لكن dreißig = 30."},
+  {q:"تجاوب إزاي على Wie alt bist du؟",o:["Ich bin 25 Jahre alt.","Ich habe 25 Jahre.","Ich heiße 25."],a:0,w:"بنستخدم bin مع السن: Ich bin 25 Jahre alt."},
+  {q:"إيه معنى sechzehn؟",o:["6","16","60"],a:1,w:"sechzehn = 16 وsechzig = 60."}
+];
+</script>
+<script src="quiz.js"></script>
+</body>
+</html>
